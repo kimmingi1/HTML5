@@ -1,51 +1,39 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <style>
-    input[type="radio"] {
-        transform: scale(2.2);
-        cursor: pointer; /* 마우스를 올렸을 때 손가락 모양으로 변경 */
-    }
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>나의 랜딩페이지</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
 
-    input[type="checkbox"] {
-        transform: scale(2.2);
-        cursor: pointer;
-    }
- 
-    input[type="submit"] {
-    /* position: absolute;  <-- 이 줄을 삭제하거나 주석 처리하세요 */
-    transform: scale(5.0);
-    cursor: pointer;
-    margin: 180px; /* 버튼 주변에 여유 공간을 주어 잘리지 않게 합니다 */
-}
-</style>
-    </head>
+    <header>
+        <h1>환영합니다! 제 랜딩페이지예요.</h1>
+        <p>글로벌미디어학부에서 웹 프로그래밍을 배우고 있습니다.</p>
+    </header>
 
-    <body>
-        <form action="https://www.musinsa.com/main/musinsa/recommend?gf=A">
-        <p>
-            <h1 style="font-size: 40px;">색상(단일선택)</h1>
-            <img src="red.jpg" width="500" height="500" alt="red">
-            <img src="blackc.jpg" width="500" height="500" alt="black">
-            <img src="bluec.jpg" width="500" height="500" alt="blue">
-            <br>
-        
-        <p style="font-size: 36px;">RED</p> <input type="radio" transform:scale(1.5); name="color" value="red">
-        <p style="font-size: 36px;">BLACK</p> <input type="radio" transform:scale(1.5); name="color" value="black">
-        <p style="font-size: 36px;">BLUE</p><input type="radio" transform:scale(1.5); name="color" value="blue">
- 
-        </p>
+    <hr> <main>
+        <section>
+            <h2>소개 (About)</h2>
+        </section>
 
-        
-        <p>
-            <h1 style="font-size: 40px;">사이즈(다중선택)</h1>
-        <h2 style="font-size: 36px;">95: <input type="checkbox" name="size" value="95"></h2>
-        <h2 style="font-size: 36px;">100: <input type="checkbox" name="size" value="100"></h2>
-        <h2 style="font-size: 36px;">105: <input type="checkbox" name="size" value="105"></h2>
-        </p>
+        <section>
+            <h2>나의 관심사</h2>
+            <ul>
+                <li>야구 관람 (Baseball)</li>
+                <li>호러 영화 시청</li>
+                <li>일본어 공부</li>
+            </ul>
+        </section>
+                    
+        <section>
+            <h2>문의하기</h2>
+            <form action="#">
+                <p>이름: <input type="text" placeholder="성함을 입력하세요"></p>
+                <input type="submit" value="전송하기">
+            </form>
+        </section>
+    </main>
 
-        <h1 style="font-size: 32px;">   <input type="submit" value="구매하러 가기"></h1>
-        </form>
-    </body>
+
+</body>
 </html>
