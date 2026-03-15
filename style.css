@@ -1,0 +1,35 @@
+/* 전체 배경 설정 */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 제목 영역 */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 태그 설명 박스 */
+.tag-box {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* 코드 예시 스타일 (회색 박스) */
+code {
+    display: block;
+    background-color: #eee;
+    padding: 10px;
+    border-left: 5px solid #004fff; /* 파란색 포인트 선 */
+    margin-top: 5px;
+}
